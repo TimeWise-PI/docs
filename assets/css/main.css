@@ -149,6 +149,16 @@ section {
   content: "/";
 }
 
+.video-container {
+  width: 10vw;  /* Largura do vídeo */
+  height: auto;  /* Altura ajusta-se proporcionalmente */
+  overflow: hidden; /* Esconde qualquer coisa que saia do container */
+}
+video {
+  width: 100%;  /* Faz o vídeo expandir para encher o container */
+  height: auto;  /* Mantém a proporção */
+}
+
 @media (max-width: 992px) {
   .breadcrumbs .d-flex {
     display: block !important;
@@ -1317,7 +1327,7 @@ section {
       rgba(var(--color-black-rgb), 0.4),
       rgba(var(--color-black-rgb), 0.7)
     ),
-    url("../img/onfocus-video-bg.jpg") center center;
+    url("../deliverables_images/DemoImage.png") center center;
   background-size: cover;
 }
 
@@ -3231,4 +3241,70 @@ section {
   top: 10px;
   right: 10px;
   display: none;
+}
+
+.section-header {
+    text-align: center;
+    margin: 2rem;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: var(--color-primary-light);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: darken(var(--color-primary-light), 10%);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn {
+    align-self: flex-end;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
 }

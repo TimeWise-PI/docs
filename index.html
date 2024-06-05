@@ -71,6 +71,7 @@
 
           <li><a class="nav-link scrollto" href="index.html#featured-services">Features</a></li>
           <li><a class="nav-link scrollto" href="index.html#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="index.html#onfocus">Demo</a></li>
           <li><a class="nav-link scrollto" href="index.html#deliverables">Deliverables</a></li>
           <li><a class="nav-link scrollto" href="index.html#documents">Documents</a></li>
           <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">Architecture</a></li>
@@ -106,9 +107,9 @@
 
 <!-- ======= Featured Services Section ======= --> 
 <section id="featured-services" class="featured-services">
-  <div class="container">
+  <div class="container" >
 
-    <div class="row gy-4">
+    <div class="row gy-4" style="margin-top: 5px;">
 
       <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-out">
         <div class="service-item position-relative">
@@ -140,6 +141,7 @@
 
     </div>
 
+
   </div>
 </section><!-- End Featured Services Section -->
 
@@ -147,13 +149,22 @@
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>About Us</h2>
-          <p>We are computer science students, and this project was developed as our Final Year Project for our degree program. The concept was collaboratively conceived and inspired by the incredibly busy schedule of a student.
-          </p>
-        </div>
 
-        <div class="row g-4 g-lg-5" data-aos="fade-up" data-aos-delay="200">
+        <div >
+          <div class="section-header" data-aos="zoom-out"  >
+              <h2>Why Should I use <strong><span style="color: var(--color-primary-light)">TimeWise</span></strong>?</h2>
+              <p >Aren't you tired of spending <strong>endless hours trying to organize your calendar</strong>? Frustrated with another week gone by <strong> without setting your goals</strong>? Sick of those <strong>tedious doodle polls</strong>?</p>
+              <br/>
+            </div>
+            <div class="video-container">
+              <video autoplay loop controls>
+                  <source src="assets/videos/TimeWisePromo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+          </div>
+          </div>
+
+        <div class="row g-4 g-lg-5" style="margin-top: 5px;" data-aos="fade-up" data-aos-delay="200">
 
           <div class="col-lg-5">
             <div class="about-img">
@@ -240,9 +251,10 @@
       </div>
     </section><!-- End About Section -->
 
+    
     <!-- ======= Clients Section ======= -->
     <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-out">
+      <div class="container " data-aos="zoom-out">
 
         <div class="row g-5">
           <div class="content d-flex flex-column justify-content-center order-last order-md-first">
@@ -252,42 +264,33 @@
 
       </div>
     </section><!-- End Clients Section -->
-
-
+    
     <!-- ======= VIDEO ======= -->  
-    <!-- <section id="onfocus" class="onfocus">
+    <section id="onfocus" class="onfocus">
       <div class="container-fluid p-0" data-aos="fade-up">
-
+        
         <div class="row g-0">
           <div class="col-lg-6 video-play position-relative">
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+            <a href="assets/videos/Demo.mp4" class="glightbox play-btn"></a>
           </div>
           <div class="col-lg-6">
             <div class="content d-flex flex-column justify-content-center h-100">
-              <h3>Voluptatem dignissimos provident quasi corporis</h3>
-              <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
+              <h3>Watch our Demo</h3>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bi bi-check-circle"></i> Automatic Tag Categorization</li>
+                <li><i class="bi bi-check-circle"></i> Schedule events with Preparation Time</li>
+                <li><i class="bi bi-check-circle"></i> Set Work and Rest Hours</li>
+                <li><i class="bi bi-check-circle"></i> Set Goals</li>
+                <li><i class="bi bi-check-circle"></i> Schedule Meetings</li>
               </ul>
-              <a href="#" class="read-more align-self-start"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
-
+        
       </div>
-    </section> -->
+    </section>
     <!-- End On Focus Section -->
     
-    
-    <!-- ======= Features ======= -->
-    <!-- Está no .txt-->
-    <!-- End Features Section -->
-
     
     <!-- ======= Deliverables ======= -->
     <section id="deliverables" class="recent-blog-posts">
@@ -382,6 +385,19 @@
     </div>
 </div>
         
+<div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+  <div class="post-box" onmouseover="showDownloadOption(this)" onmouseout="hideDownloadOption(this)">
+      <div class="post-img"><img src="assets/deliverables_images/M3_Images.png" class="img-fluid" alt=""></div>
+      <div class="meta">
+          <span class="post-date">MileStone 4 Presentation</span>
+          <span class="post-author"> / Tue, June 4 </span>
+      </div>
+      <div class="download-option" style="display: none;">
+          <a href="assets/deliverables/MILESTONE4 - Presentation.pptx.pdf" download="MileStone4.pdf">Download PDF</a>
+      </div>
+  </div>
+</div>
+      
 
     <!--  -->
 
@@ -396,7 +412,7 @@
 
       <div class="container" data-aos="fade-up">
         <div class="section-header">
-            <h2>Additional Documents</h2>
+            <h2>Documents</h2>
             <p>Documents Created During the Project and Presented at Milestones</p>
         </div>
     
@@ -489,6 +505,36 @@
 
       <!--  -->
 
+      <div class="col-lg-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="post-box" onmouseover="showDownloadOption(this)" onmouseout="hideDownloadOption(this)">
+            <div class="post-img"><img src="assets/deliverables_images/Poster.png" class="img-fluid" alt=""></div>
+            <div class="meta">
+                <span class="post-date">Students@DETI Poster</span>
+                <span class="post-author"> / M4</span>
+            </div>
+            <div class="download-option" style="display: none;">
+                <a href="assets/deliverables/Poster Students@DETI.pptx (1).jpg" download="Poster.jpg">Download JPG</a>
+            </div>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <div class="col-lg-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="post-box" onmouseover="showDownloadOption(this)" onmouseout="hideDownloadOption(this)">
+            <div class="post-img"><img src="assets/deliverables_images/report.png" class="img-fluid" alt=""></div>
+            <div class="meta">
+                <span class="post-date">Report</span>
+                <span class="post-author"> / M4</span>
+            </div>
+            <div class="download-option" style="display: none;">
+                <a href="assets/deliverables/TimeWise.pdf" download="TimeWise.pdf">Download PDF</a>
+            </div>
+        </div>
+      </div>
+
+      <!--  -->
+
       </div>
       </div>
 
@@ -554,6 +600,12 @@
     
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <p>We are computer science students, and this project was developed as our Final Year Project for our degree program. The concept was collaboratively conceived and inspired by the incredibly busy schedule of a student.
+        </p>
+      </div>
+
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
